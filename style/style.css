@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+    margin: 30px 8px;
+    padding: 40px 8px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+.subtitle {
+    opacity: 0.8;
+}
+
+.img {
+    width: 100%;
+    background-color: #fff;
+    /* margin: 20px 10px; */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img > img {
+    margin: 10px;
+    /* object-fit: cover; */
+    max-width: calc(100% - 20px);
+    display: block;
+    /* width: auto; */
+}
+
+.img > .img-description {
+    padding: 10px;
+    opacity: 0.8;
+    margin: 5px auto 15px;
+}
+
+.years,
+.quote {
+    width: 50%;
+    margin: auto;
+}
+
+.years > p.title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.years > ul > li {
+    margin: 30px auto;
+    line-height: calc(100% * 1.5);
+    opacity: 0.9;
+    /* list-style-position: inside; */
+}
+
+.quote {
+    font-style: oblique;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.quote > .content {
+    margin: 20px auto;
+}
+
+.quote > .content::before,
+.quote > .content::after {
+    content: '"';
+    font-style: italic;
+}
+
+.more {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.more > a {
+    opacity: 0.6;
+    transition: all 1s 0.5s ease;
+}
+
+.more > a:hover {
+    opacity: 1;
+}
